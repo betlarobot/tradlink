@@ -1,58 +1,69 @@
 export default function Home() {
   return (
-    <div className="bg- text-white min-h-screen flex font-sans">
-      {/* Sidebar */}
-      <div className="w-64 bg-[#111111] p-6 border-r border- fixed h-screen overflow-y-auto">
-        <div className="flex items-center gap-3 mb-12">
-          <div className="w-9 h-9 bg-violet-600 rounded-xl flex items-center justify-center text-xl font-bold">T</div>
+    <div className="min-h-screen bg-zinc-950 text-white p-8">
+      <div className="max-w-7xl mx-auto">
+
+        {/* Header */}
+        <div className="flex justify-between items-center">
           <div>
-            <h1 className="text-2xl font-bold tracking-tight">TradLink</h1>
-            <p className="text- text-gray-500 -mt-1">One App For All Traders</p>
+            <h1 className="text-5xl font-bold text-violet-400">
+              TradLink Network
+            </h1>
+            <p className="text-2xl text-zinc-400 mt-2">
+              One App For All Traders
+            </p>
           </div>
+
+          <button className="bg-violet-600 hover:bg-violet-700 px-6 py-3 rounded-xl font-medium transition">
+            Launch Dashboard
+          </button>
         </div>
 
-        <div className="space-y-1">
-          <div className="bg-violet-600 text-white px-4 py-3 rounded-2xl flex items-center gap-3 font-medium">Dashboard</div>
-          <div className="px-4 py-3 text-gray-400 hover:bg- rounded-2xl flex items-center gap-3 cursor-pointer">Trading</div>
-          <div className="px-4 py-3 text-gray-400 hover:bg- rounded-2xl flex items-center gap-3 cursor-pointer">Portfolio</div>
-          <div className="px-4 py-3 text-gray-400 hover:bg- rounded-2xl flex items-center gap-3 cursor-pointer">Social Feed</div>
-          <div className="px-4 py-3 text-gray-400 hover:bg- rounded-2xl flex items-center gap-3 cursor-pointer">Bots Marketplace</div>
-          <div className="px-4 py-3 text-gray-400 hover:bg- rounded-2xl flex items-center gap-3 cursor-pointer">Lucy AI Assistant</div>
-        </div>
-      </div>
+        {/* Hero Section */}
+        <div className="mt-20 text-center">
+          <div className="text-6xl mb-6">📊</div>
 
-      {/* Main Content */}
-      <div className="ml-64 flex-1 p-8">
-        <div className="flex justify-between items-center mb-8">
-          <div>
-            <h2 className="text-3xl font-semibold">Welcome back, Prof. Trader! 👋</h2>
-            <p className="text-gray-400">Here's what's happening with your trading today.</p>
-          </div>
+          <h2 className="text-4xl font-semibold mb-4">
+            Professional Trading Dashboard
+          </h2>
+
+          <p className="text-zinc-400 text-xl max-w-md mx-auto">
+            अभी हम पूरा डैशबोर्ड बना रहे हैं।<br />
+            प्रोफेसर, आपका UI तैयार हो चुका है।
+          </p>
         </div>
 
-        {/* Stats */}
-        <div className="grid grid-cols-4 gap-6">
-          <div className="bg-[#111111] p-6 rounded-3xl">
-            <p className="text-gray-400 text-sm">Total P&L</p>
-            <p className="text-4xl font-bold text-emerald-400 mt-3">₹1,24,350</p>
+        {/* Feature Cards */}
+        <div className="grid grid-cols-3 gap-6 mt-20">
+
+          <div className="bg-zinc-900 p-6 rounded-2xl hover:bg-zinc-800 transition">
+            <h3 className="text-xl font-semibold mb-2">📈 Live Trading</h3>
+            <p className="text-zinc-400">
+              Real-time charts with advanced indicators
+            </p>
           </div>
-          <div className="bg-[#111111] p-6 rounded-3xl">
-            <p className="text-gray-400 text-sm">Portfolio Value</p>
-            <p className="text-4xl font-bold mt-3">₹8,75,420</p>
+
+          <div className="bg-zinc-900 p-6 rounded-2xl hover:bg-zinc-800 transition">
+            <h3 className="text-xl font-semibold mb-2">🤖 Lucy AI</h3>
+            <p className="text-zinc-400">
+              AI-powered trading assistant & signals
+            </p>
           </div>
-          <div className="bg-[#111111] p-6 rounded-3xl">
-            <p className="text-gray-400 text-sm">Win Rate</p>
-            <p className="text-4xl font-bold mt-3">72.45%</p>
+
+          <div className="bg-zinc-900 p-6 rounded-2xl hover:bg-zinc-800 transition">
+            <h3 className="text-xl font-semibold mb-2">💼 Portfolio</h3>
+            <p className="text-zinc-400">
+              Track performance & manage assets easily
+            </p>
           </div>
-          <div className="bg-[#111111] p-6 rounded-3xl">
-            <p className="text-gray-400 text-sm">Total Trades</p>
-            <p className="text-4xl font-bold mt-3">128</p>
-          </div>
+
         </div>
 
-        <div className="mt-12 text-center text-gray-500">
-         
+        {/* Footer Note */}
+        <div className="mt-24 text-center text-zinc-500">
+          🚀 Next Step: Charts + AI Panel + Live Data Integration
         </div>
+
       </div>
     </div>
   );
