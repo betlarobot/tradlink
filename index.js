@@ -1,16 +1,9 @@
 {
-  "name": "tradlink",
-  "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
-  },
-  "dependencies": {
-    "next": "14.2.23",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "tailwindcss": "^3.4.1"
-  }
+export default function Home() {
+  return (
+    <div style={{ padding: 20 }}>
+      <h1>🚀 TradLink Network</h1>
+      <p>App is working</p>
+    </div>
+  );
 }
