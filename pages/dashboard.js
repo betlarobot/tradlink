@@ -97,3 +97,6 @@ function Card({ title, value }) {
     </div>
   );
 }
+export default function Dashboard() {
+  return <h1>Dashboard Working ✅</h1>;
+}
