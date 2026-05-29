@@ -1,33 +1,63 @@
 export default function Home() {
   return (
-    <div className="flex items-center justify-center h-screen bg-[#020617] text-white">
-      
-      <div className="text-center">
+    <div
+      style={{
+        background: "#020617",
+        color: "white",
+        height: "100vh",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        textAlign: "center",
+        flexDirection: "column"
+      }}
+    >
+      <h1
+        style={{
+          fontSize: "60px",
+          color: "#22c55e",
+          marginBottom: "10px"
+        }}
+      >
+        TradLink Network
+      </h1>
 
-        {/* Title */}
-        <h1 className="text-6xl font-bold text-green-500">
-          TradLink
-        </h1>
+      <p
+        style={{
+          color: "#94a3b8",
+          fontSize: "20px",
+          marginBottom: "20px"
+        }}
+      >
+        One App for All Traders
+      </p>
 
-        {/* Tagline */}
-        <p className="text-gray-400 mt-3 text-lg">
-          One App for All Traders
-        </p>
+      <p
+        style={{
+          maxWidth: "600px",
+          color: "#64748b",
+          marginBottom: "30px"
+        }}
+      >
+        AI-powered trading ecosystem with analytics,
+        automation, community, and Lucy AI assistant.
+      </p>
 
-        {/* Description */}
-        <p className="text-gray-500 mt-2 max-w-md mx-auto">
-          AI-powered trading dashboard with analytics, social trading, and smart insights.
-        </p>
-
-        {/* Button */}
-        <a href="/dashboard">
-          <button className="mt-6 px-6 py-3 bg-green-500 rounded-lg text-black font-semibold hover:scale-105 transition">
-            Enter Dashboard
-          </button>
-        </a>
-
-      </div>
-
+      <a href="/dashboard">
+        <button
+          style={{
+            background: "#22c55e",
+            color: "black",
+            padding: "12px 30px",
+            borderRadius: "10px",
+            border: "none",
+            fontWeight: "bold",
+            cursor: "pointer"
+          }}
+        >
+          Enter Dashboard
+        </button>
+      </a>
     </div>
   );
 }
